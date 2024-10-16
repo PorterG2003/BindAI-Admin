@@ -3,8 +3,8 @@ import React from 'react';
 
 // Import Amplify Backend
 import { Amplify } from 'aws-amplify';
-import outputs from '@/amplify_outputs.json';
-Amplify.configure(outputs);
+//import outputs from '@/amplify_outputs.json';
+//Amplify.configure(outputs);
 
 // Import and Load the Inter font from Google Fonts
 import { Inter } from "next/font/google";

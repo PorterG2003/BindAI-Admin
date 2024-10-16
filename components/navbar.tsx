@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faLink, faPlus } from "@fortawesome/free-solid-svg-icons";
-import ThemeToggleSwitch from "./theme_toggle";
 
 export default function SidebarNavbar() {
   return (
@@ -32,12 +31,6 @@ export default function SidebarNavbar() {
             <span className="text-base font-medium">Connectors</span>
           </div>
         </Link>
-      </div>
-
-      {/* Theme Toggle Switch with Label */}
-      <div className="flex items-center justify-between p-4 w-full">
-        <span className="text-base">Light/Dark Mode</span>
-        <ThemeToggleSwitch />
       </div>
     </div>
   );
