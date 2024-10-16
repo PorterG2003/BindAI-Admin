@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { SignIn } from '@/components/sign_in';
 import { SignUp } from '@/components/sign_up';
-import { Amplify } from 'aws-amplify';
+//import { Amplify } from 'aws-amplify';
 //import outputs from '@/amplify_outputs.json';
 //Amplify.configure(outputs);
 

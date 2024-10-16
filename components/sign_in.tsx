@@ -13,21 +13,8 @@ export function SignIn({ setAuthState }: { setAuthState: (state: string) => void
         password: password,
       });
       setAuthState('signedIn');
-    } catch (err: any) {  // Ensure that TypeScript recognizes 'err' as an error object
+    } catch (err: unknown) {  // Ensure that TypeScript recognizes 'err' as an error object
       console.error('Sign-in error:', err); // Log the full error object for debugging
-      
-      // Check for specific error messages or details
-      if (err.code) {
-        console.error('Error code:', err.code);
-      }
-      
-      if (err.message) {
-        console.error('Error message:', err.message);
-      }
-  
-      if (err.name) {
-        console.error('Error name:', err.name);
-      }
   
       // Set a user-friendly error message
       setError('Failed to sign in. Please check your credentials.');
