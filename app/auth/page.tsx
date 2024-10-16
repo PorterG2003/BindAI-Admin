@@ -22,7 +22,7 @@ export default function AuthPage() {
         } else {
           setAuthState('signIn');
         }
-      } catch (error) {
+      } catch {
         setAuthState('signIn');
       }
     };
