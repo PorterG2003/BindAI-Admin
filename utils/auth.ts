@@ -1,10 +1,10 @@
 "use client";
 
 import { getCurrentUser } from 'aws-amplify/auth';
-//import { Amplify } from 'aws-amplify';
-//import outputs from '@/amplify_outputs.json';
+import { Amplify } from 'aws-amplify';
+import outputs from '@/amplify_outputs.json';
 
-//Amplify.configure(outputs);
+Amplify.configure(outputs);
 
 export const checkUserAuthentication = async () => {
   try {
