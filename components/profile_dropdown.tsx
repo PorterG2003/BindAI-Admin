@@ -6,7 +6,7 @@ import { signOut } from "aws-amplify/auth"; // Import Auth from aws-amplify
 import { Amplify } from 'aws-amplify';
 import outputs from '@/amplify_outputs.json';
 
-//Amplify.configure(outputs);
+Amplify.configure(outputs);
 
 export default function ProfileDropdown() {
   const [isOpen, setIsOpen] = useState(false);
