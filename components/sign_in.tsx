@@ -91,7 +91,7 @@ export function SignIn({ authState, setAuthState }: { authState: string, setAuth
         Need an account? Talk to Porter.
       </p>
       <p className="mt-4 text-gray-500">
-        If you don't know who Porter is, you probably don't need an account.
+        If you don&apos;t know who Porter is, you probably don&apos;t need an account.
       </p>
     </div>
   );
